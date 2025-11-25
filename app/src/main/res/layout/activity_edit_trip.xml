@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Trip"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g., Paris, France"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select start date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="14dp"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select end date"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="14dp"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget ($)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g., 2000"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTripType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbAdventure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adventure"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRelaxation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relaxation"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchBooked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booking Confirmed"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <CheckBox
+            android:id="@+id/cbPacking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Packing Completed"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Trip"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:backgroundTint="#1976D2" />
+
+    </LinearLayout>
+
+</ScrollView>
